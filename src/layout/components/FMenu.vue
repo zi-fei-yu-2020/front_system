@@ -4,7 +4,6 @@
         :default-active="defaultActive"
         unique-opened
         :collapse="isCollapse"
-        default-active="2"
         class="border-0"
         @select="handleSelect"
         :collapse-transition="false"
@@ -19,7 +18,7 @@
           </template>
             <el-menu-item v-for="(item2,index2) in item.child"
             :key="index2" :index="item2.frontpath">
-            <el-icon><component :is="item.icon"></component></el-icon>
+            <el-icon><component :is="item2.icon"></component></el-icon>
             {{ item2.name }}</el-menu-item>
         </el-sub-menu>
 
@@ -53,10 +52,10 @@ const isCollapse = computed( ()=> !(asideWidth.value=='250px'))
 
 // const asideMenus = [{
 //     "name": "后台面板",
-//     "icon": "help",
+//     "icon": "Platform",
 //     "child": [{
 //         "name": "主控台",
-//         "icon": "home-filled",
+//         "icon": "Help",
 //         "frontpath":"/",
 //     }]
 // },{
