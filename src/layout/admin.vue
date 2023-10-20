@@ -5,7 +5,7 @@
         <f-header/>
       </el-header>
       <el-container>
-        <el-aside :width="asideWidth">
+        <el-aside :width="asideWidth" class="bg-light-50">
             <f-menu/>
         </el-aside>
         <el-main>

@@ -40,6 +40,23 @@ service.interceptors.request.use(function (config) {
 //     return Promise.reject(error);
 // })
 
+// service.interceptors.response.use(
+//     (response) => {
+//       return response;
+//     },
+//     (error) => {
+//       if (error.response && (error.response.status === 401 || error.response.status === 500)) {
+//         // Token 过期，显示提示并重定向到登录页面
+//         removeToken('admin-token');
+//         const router = useRouter();
+//         router.push('/login');
+//         toast('Token过期,请重新登录!!!', 'error');
+//       }
+//       return Promise.reject(error);
+//     }
+//   );
+
+
 
 
 export default service
